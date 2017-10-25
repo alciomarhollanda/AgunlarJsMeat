@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  luke = {name:'luke', isJedi: true, tample: 'Coruscant'}
+  leia = {name:'leia', isJedi: false}
+  alciomar = {name:'alciomar', isJedi: false}
+  
 }

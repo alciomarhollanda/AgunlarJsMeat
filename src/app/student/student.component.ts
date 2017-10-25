@@ -1,4 +1,7 @@
+import { Student } from './student.model';
 import { Component, OnInit, Input } from '@angular/core';
+
+
 
 @Component({
   selector: 'app-student',
@@ -7,8 +10,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class StudentComponent implements OnInit {
 
- @Input() name: string = 'Luke'
- @Input() isJedi: Boolean = true
+ @Input() student: Student
+// @Input() isJedi: Boolean = true
   
   constructor() { }
 
