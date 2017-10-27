@@ -1,4 +1,7 @@
+import { Student } from './student/student.model';
 import { Component } from '@angular/core';
+
+
 
 @Component({
   selector: 'app-root',
@@ -6,10 +9,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  students: Student[] = [
+    {name:'luke', isJedi: true, temple:'Coruscant'},
+    {name:'leia', isJedi: false},
+    {name:'alciomar', isJedi: false}
+  ]
 
-  luke = {name:'luke', isJedi: true, tample: 'Coruscant'}
-  leia = {name:'leia', isJedi: false}
-  alciomar = {name:'alciomar', isJedi: false}
   
 }
